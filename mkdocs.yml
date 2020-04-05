@@ -1,5 +1,15 @@
 site_name: Agorakit docs
 nav:
     - Home: index.md
-    - Installation: install.md
+    - 'Admin guide':
+        - Installation: install.md
+        - Keep your installation up to date: update.md
+        - Configuring inbound email: inbound_email.md
+        - Configuring external authentification: external_authentification.md
+        - For developers: development.md
+    - 'User guide': usage.md
 repo_url: https://github.com/agorakit/documenation/
+markdown_extensions:
+    - toc:
+        permalink: "#"
+theme: readthedocs

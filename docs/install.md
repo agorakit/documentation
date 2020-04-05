@@ -10,7 +10,7 @@ Keep reading for steps to install an Agorakit instance on your own server.
 
 You need a good web hosting provider that provides the following :
 
-- php >= 7.1.3 with the following extensions :
+- php >= 7.2 with the following extensions :
     - OpenSSL PHP Extension
     - PDO PHP Extension
     - Mbstring PHP Extension
@@ -26,7 +26,9 @@ You need a good web hosting provider that provides the following :
 
 All those features together are hard to find, so people are obliged to use a VPS and setup everything themselves. This is a riskier proposal if you don't know how it works.
 
-We have been very successful with https://www.alwaysdata.com shared hosting (By the way they host free of charge the free instance of Agorakit at https://app.agorakit.org).
+We have been very successful with [Alwaysdata](https://www.alwaysdata.com) shared hosting.
+
+By the way they host free of charge [the free instance of Agorakit](https://app.agorakit.org).
 
 
 # Installation
@@ -38,7 +40,7 @@ This is perfectly standard and documented here : https://laravel.com/docs/master
 
 Clone the repository::
 
-        $ git clone https://github.com/philippejadin/agorakit.git
+        $ git clone https://github.com/agorakit/agorakit
 
 
 Create and edit the configuration file from the example provided::
@@ -120,30 +122,3 @@ The cron jobs are used to send group summaries at a fixed interval, for the inbo
 ## Setup geolocalisation and mapping
 
 Create an account at Mapbox.com and create an api token. Then fill this api token in your .env file. With this, you will get geocoding and maps. We switched from Google maps to Mapbox because Google Maps now requires a credit card even for the free tier. Mapbox free tier is probably enough for your use (50k displays / month at the time of writing)
-
-## Setup inbound emails
-
-This additional step allows you to have one mailbox for each group so members can post by email.
-
-You need an email address on server with imap. It must either be a catch all on a subdomain (or even on a domain) or a server supporting "+" addressing (gmail for example allows this).
-
-Let's say you installed Agorakit on agora.example.org
-Create a catchall mailbox on * .@agora.example.org
-
-Then go to admin settings and fill the form there (end of the page).
-
-You need to fill server & login & password
-
-Then you need to fill prefix and suffix. Two cases there :
-
-
-For a catch all there is no prefix. The suffix in the above example would be @agora.example.org . This will create emails like group-slug@agora.example.storing
-
-On the other hand if you use "+" addressing (a gmail box for instance, let's call it agorakit@gmail.com),
-
-- prefix will be agorakit+
-- suffix will be @gmail.com
-
-Wich create emails like agorakit+group-slug@gmail.com
-
-If you enable inbound email, the mailbox will be automatically checked and processed email will be put in a  "processed" folder under INBOX. Failed emails will be similarly put a "Failed" folder under INBOX for inspection.
