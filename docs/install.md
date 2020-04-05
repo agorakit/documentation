@@ -24,11 +24,12 @@ You need a good web hosting provider that provides the following :
 - Git
 - the ability to run cron jobs
 
-All those features together are hard to find, so people are obliged to use a VPS and setup everything themselves. This is a riskier proposal if you don't know how it works.
+!!! Note
+        All those features together are hard to find, so people are obliged to use a VPS and setup everything themselves. This is a riskier proposal if you don't know how it works.
 
-We have been very successful with [Alwaysdata](https://www.alwaysdata.com) shared hosting.
+        We have been very successful with [Alwaysdata](https://www.alwaysdata.com) shared hosting.
 
-By the way they host free of charge [the free instance of Agorakit](https://app.agorakit.org).
+        By the way they host free of charge [the free instance of Agorakit](https://app.agorakit.org).
 
 
 # Installation
@@ -48,7 +49,8 @@ Create and edit the configuration file from the example provided::
         $ cp .env.example .env
         $ nano .env
 
-You need to set at least your database credentials & site name. Check that your database exists and is reachable with those credentials.
+!!! Note
+        You need to set at least your database credentials & site name. Check that your database exists and is reachable with those credentials.
 
 Here is a description of every setting in the .env file::
 
@@ -69,7 +71,7 @@ Here is a description of every setting in the .env file::
         SESSION_DRIVER=file // driver to use for storing sessions
         QUEUE_DRIVER=sync // driver to use for queues
 
-        MAIL_DRIVER=smtp // driver to use for sending emails. Use mail to use php built-in mail function
+        MAIL_DRIVER=mail // driver to use for sending emails. Use mail to use php built-in mail function
         MAIL_HOST=mailtrap.io // hostname if you use smtp for sending mails
         MAIL_PORT=2525 // port if you use smtp for sending mails
         MAIL_USERNAME=null // login if you use smtp for sending mails
@@ -118,7 +120,14 @@ Follow Laravel cron documentation here : https://laravel.com/docs/master/schedul
 
 The cron jobs are used to send group summaries at a fixed interval, for the inbound email handler and for various database interactions.
 
+!!! note
+        Without cron job your application will **NOT** send summaries. Cron jobs are required for correct opperation.
+
 
 ## Setup geolocalisation and mapping
 
-Create an account at Mapbox.com and create an api token. Then fill this api token in your .env file. With this, you will get geocoding and maps. We switched from Google maps to Mapbox because Google Maps now requires a credit card even for the free tier. Mapbox free tier is probably enough for your use (50k displays / month at the time of writing)
+Create an account at Mapbox.com and create an api token. Then fill this api token in your .env file. With this, you will get geocoding and maps.
+
+We switched from Google maps to Mapbox because Google Maps now requires a credit card even for the free tier.
+
+Mapbox free tier is probably enough for your use (50k displays / month at the time of writing)

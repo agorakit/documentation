@@ -1,27 +1,26 @@
-Update your installation
-========================
+# Update your installation
+It is important to keep an up to date installation of Agorakit.
 
-
-It is important to keep an up to date installation of Agorakit
 We try to keep the master branch always in a good, safe, and working condition (this is called a "rolling release" model).
 
 That means that tests passes and that you get the latest features directly from the master branch.
 
-Make a backup
--------------
-Make a backup of your SQL database in case something goes wrong.
+!!! warning
+        Make a backup of your SQL database in case something goes wrong. Make a backup of all your files as well. Make two backups even, and store them in a separate computer.
 
-Update script for automated updates
------------------------------------
+# Choose your poison
+You can choose between an automated update procedure from the command line, or a step by step to update manually :
+
+## Update script for automated updates
 There is a helper script that does the update for you :
 
         $ ./update
 
-Beware that the script will migrate your database without asking for confirmation. Always make a backup of the database just in case something goes wrong.
+!!! warning
+        Beware that the script will migrate your database without asking for confirmation. Always make a backup of the database just in case something goes wrong.
 
 
-Proceed with the update manually
---------------------------------
+## Proceed with the update manually
 You can at anytime do this to update your install :
 
         $ php artisan down
@@ -32,8 +31,7 @@ You can at anytime do this to update your install :
 
 
 
-If something goes wrong
------------------------
+## If something goes wrong
 Restore your database backup and git checkout a previous (working) version. Then re-run composer install.
 
-Contact me if an update fails (it never happened so this kind of failure is highly interesting information for the project).
+Contact us if an update fails (it never happened so this kind of failure is highly interesting information for the project).
