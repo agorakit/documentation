@@ -2,14 +2,15 @@ site_name: Agorakit docs
 nav:
     - Home: index.md
     - 'Admin guide':
-        - Installation: install.md
-        - Keep your installation up to date: update.md
-        - Configuring inbound email: inbound_email.md
-        - Configuring external authentification: external_authentification.md
+        - Install: install.md
+        - Update: update.md
+        - Configure inbound email: inbound_email.md
+        - Configure external authentification: external_authentification.md
         - For developers: development.md
     - 'User guide': usage.md
-repo_url: https://github.com/agorakit/documenation/
+repo_url: https://github.com/agorakit/documentation/
 markdown_extensions:
     - toc:
         permalink: "#"
-theme: readthedocs
+theme:
+  name: 'material'

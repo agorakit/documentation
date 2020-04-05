@@ -1,5 +1,5 @@
-Provide external authentification to Agorakit
-=============================================
+# Provide external authentification to Agorakit
+
 
 You can provide facebook, google, twitter and/or github authentication to your users.
 

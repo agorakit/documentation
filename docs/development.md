@@ -3,46 +3,45 @@
 
 You want to contribute to the project? Great!
 
-First follow the installation instructions including the creation of sample content using ::
+First follow the installation instructions including the creation of sample content using :
 
-  $ php artisan db:seed
-
-
-
-
-## Setup your environment, option 1 : Using php's built in server
+    $ php artisan db:seed
 
 
 
-If you want to start a local server for development::
 
-  $ php artisan serve
+## Option 1 : Using php's built in server
+
+If you want to start a local server for development:
+
+    $ php artisan serve
 
 The install will be available to 127.0.0.1:8000
 
+This is what I use on my main workstation (linux based) since it's very simple and very quick.
 
 
-## Setup your environment, option 2 : Using Vagrant
 
+## Option 2 : Using Vagrant
 
-To use vagrant, you need to install : [Virtual Box](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.virtualbox.org/wiki/Downloads).
+To use vagrant, you need to install [Virtual Box](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.virtualbox.org/wiki/Downloads).
 
-After in the root of your project::
+After in the root of your project:
 
-  $ vagrant up
-  $ vagrant ssh
-  $ cd agorakit
-  $ composer install
-  $ php artisan key:generate
-  $ php artisan migrate
-  $ php artisan db:seed (if you want the db filled with fake infos)
+    $ vagrant up
+    $ vagrant ssh
+    $ cd agorakit
+    $ composer install
+    $ php artisan key:generate
+    $ php artisan migrate
+    $ php artisan db:seed (if you want the db filled with fake infos)
 
 
 Then you will have access to the project using :
 
 http://192.168.10.12/
 
-Modifying your hosts file
+### Modifying your hosts file
 
 You must add the "domains" for your Nginx sites to the hosts file on your machine. The hosts file will redirect requests for your Homestead sites into your Homestead machine. On Mac and Linux, this file is located at /etc/hosts. On Windows, it is located at C:\Windows\System32\drivers\etc\hosts.
 
@@ -52,18 +51,20 @@ You must add the "domains" for your Nginx sites to the hosts file on your machin
 
 Install nodejs and npm (current version of nodejs is 10)
 
-Then in the root of the project run::
-  $ npm install
+Then in the root of the project run:
 
-You will be able to have auto updated browser when you change a file by running::
-  $ npm run watch
+    $ npm install
+
+You will be able to have auto updated browser when you change a file by running:
+
+    $ npm run watch
 
 
-When you are done, run::
-  $ npm run prod
+When you are done, run:
+
+    $ npm run prod
 
 To generate production ready css and js files.
-
 
 # Testing your code
 
