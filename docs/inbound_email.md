@@ -1,5 +1,8 @@
 # Setup inbound emails
 
+!!! warning
+    Inbound email support is experimental. You might experience bugs, please report them if it happens to your installation.
+
 This additional step allows you to have one mailbox for each group so members can post by email.
 
 You need an email address on server with imap. It must either be a catch all on a subdomain (or even on a domain) or a server supporting "+" addressing (gmail for example allows this).

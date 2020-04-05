@@ -1,15 +1,19 @@
 site_name: Agorakit docs
 nav:
     - Welcome!: index.md
-    - 'Admin guide':
+    - 'Installation & config':
         - Install: install.md
         - Update: update.md
         - Configure inbound email: inbound_email.md
         - Configure external authentification: external_authentification.md
-        - For developers: development.md
-    - 'User guide':
         - First steps after install : first_steps.md
-        - Creating and managing groups : usage.md
+    - 'Group managment':
+        - Creating & managing a group: group.md
+    - 'User guide':
+        - Using Agorakit : usage.md
+    - 'Developer guide':
+        - Introduction: development.md
+        - Artisan commands: artisan.md
     - Contact : contact.md
 repo_url: https://github.com/agorakit/documentation/
 markdown_extensions:

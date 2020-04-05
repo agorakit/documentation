@@ -1,9 +1,7 @@
 # Documentation
 Documentation for Agorakit
 
-This repository will soon hold all documentation of Agorakit.
-Curently hosted here : https://agorakit.readthedocs.io/en/latest/
-Current source is here : https://github.com/agorakit/agorakit/blob/master/docs/index.rst
+This repository holds all documentation of Agorakit.
 
 Documentation is written in markdown (inside the ./docs directory).
 
