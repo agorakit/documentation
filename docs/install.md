@@ -1,5 +1,4 @@
-Installation
-============
+# Installation
 
 If you are just looking to give Agorakit a try, you can do that without having to install it. Just create an account on https://app.agorakit.org, where you can try an Agorakit instance free for citizen-activists and for evaluation purposes.
 
@@ -7,8 +6,7 @@ You can also get in touch with us if you are interested in managed hosting of a 
 
 Keep reading for steps to install an Agorakit instance on your own server.
 
-Requirements
-------------
+## Requirements
 
 You need a good web hosting provider that provides the following :
 
@@ -31,8 +29,7 @@ All those features together are hard to find, so people are obliged to use a VPS
 We have been very successful with https://www.alwaysdata.com shared hosting (By the way they host free of charge the free instance of Agorakit at https://app.agorakit.org).
 
 
-Installation
-------------
+# Installation
 
 Currently, you need to know how to install a Laravel application using the command line.
 This is perfectly standard and documented here : https://laravel.com/docs/master/installation.
@@ -85,7 +82,7 @@ Here is a description of every setting in the .env file::
 
 
 
-Download all the packages needed::
+Download all the packages needed:
 
         $ composer install
 
@@ -93,45 +90,45 @@ Generate a key::
 
         $ php artisan key:generate
 
-Migrate (create all tables in) the database::
+Migrate (create all tables in) the database:
 
         $ php artisan migrate
 
- Link the storage public folder to the user visible public folder::
+ Link the storage public folder to the user visible public folder:
 
         $ php artisan storage:link
 
-(Optional) Create sample content the database::
+(Optional) Create sample content the database:
 
         $ php artisan db:seed
 
 Don't do this last step for a production install since it will create an admin user and dummy groups and content.
 
 
-Setup your web server
----------------------
+## Setup your web server
+
 Then setup your web server to serve the /public directory. This is very important, since you don't want to expose the rest of the directories (for example you DON'T want to expose your .env file!)
 
 
-Setup a cron job
-----------------
+## Setup a cron job
+
 Follow Laravel cron documentation here : https://laravel.com/docs/master/scheduling
 
 The cron jobs are used to send group summaries at a fixed interval, for the inbound email handler and for various database interactions.
 
 
-Setup geolocalisation and mapping
----------------------------------
+## Setup geolocalisation and mapping
+
 Create an account at Mapbox.com and create an api token. Then fill this api token in your .env file. With this, you will get geocoding and maps. We switched from Google maps to Mapbox because Google Maps now requires a credit card even for the free tier. Mapbox free tier is probably enough for your use (50k displays / month at the time of writing)
 
-Setup inbound emails
---------------------
+## Setup inbound emails
+
 This additional step allows you to have one mailbox for each group so members can post by email.
 
 You need an email address on server with imap. It must either be a catch all on a subdomain (or even on a domain) or a server supporting "+" addressing (gmail for example allows this).
 
 Let's say you installed Agorakit on agora.example.org
-Create a catchall mailbox on *.@agora.example.org
+Create a catchall mailbox on * .@agora.example.org
 
 Then go to admin settings and fill the form there (end of the page).
 

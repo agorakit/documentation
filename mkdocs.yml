@@ -2,3 +2,4 @@ site_name: Agorakit docs
 nav:
     - Home: index.md
     - Installation: install.md
+repo_url: https://github.com/agorakit/documenation/

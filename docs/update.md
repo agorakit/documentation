@@ -13,21 +13,22 @@ Make a backup of your SQL database in case something goes wrong.
 
 Update script for automated updates
 -----------------------------------
-There is a helper script that does the update for you ::
-  $ ./update
+There is a helper script that does the update for you :
+
+        $ ./update
 
 Beware that the script will migrate your database without asking for confirmation. Always make a backup of the database just in case something goes wrong.
 
 
 Proceed with the update manually
 --------------------------------
-You can at anytime do this to update your install ::
+You can at anytime do this to update your install :
 
-  $ php artisan down
-  $ git pull
-  $ composer install
-  $ php artisan migrate
-  $ php artisan up
+        $ php artisan down
+        $ git pull
+        $ composer install
+        $ php artisan migrate
+        $ php artisan up
 
 
 
