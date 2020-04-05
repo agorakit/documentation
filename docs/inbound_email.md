@@ -1,6 +1,6 @@
 # Setup inbound emails
 
-!!! warning
+!!! note
     Inbound email support is experimental. You might experience bugs, please report them if it happens to your installation.
 
 This additional step allows you to have one mailbox for each group so members can post by email.
