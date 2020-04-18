@@ -35,3 +35,13 @@ You can at anytime do this to update your install :
 Restore your database backup and git checkout a previous (working) version. Then re-run composer install.
 
 Contact us if an update fails (it never happened so this kind of failure is highly interesting information for the project).
+
+# Version Specific Instructions
+
+## Upgrade to 1.5
+After the normal update you might get an error mentioning duplicate username key in user table.
+
+Run `php artisan agorakit:enforceuniqueusernames` to fix the issue
+Then re-run the update script.
+
+This happens only on large installs and can be run multiple times without problem. It's a future proof fix for this issue.
