@@ -22,7 +22,7 @@ Make a branch of the master branch, work on your branch and create a pull reques
 ## Financial support
 - Consider donating to help me work on it (check https://agorakit.org)
 - Help me find ways to support financially the project (sponsorship, public subsidies, etc.)
-- Financial support is btw the key to offer a free hosted version in the future for those groups that can't afford to pay. This is high on my todo list
+- Financial support is btw the key to offer a free hosted version in the future for those groups that can't afford to pay.
 
 ## Licence
 All the work is open source (AGPL)
