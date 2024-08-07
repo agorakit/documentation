@@ -4,5 +4,5 @@ Documentation is written in markdown and the website is statically built using [
 
 
 # How to contribute ?
-Read the documentation on documenting (!) [here](./docs/documentation.md)
+Read the documentation on documenting (!) [here](./docs/en/documentation.md)
 

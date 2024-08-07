@@ -44,7 +44,7 @@ You need to fill prefix and suffix. Two cases there :
 If you enable inbound email, the mailbox will be automatically checked and processed email will be put in a "processed" folder under INBOX. Failed emails will be similarly put a "failed" folder under INBOX for inspection.
 
 
-## Provide external authentification to Agorakit
+## External authentification
 
 !!! info
     External authentification has been removed. I have fery few (if any) people ask for it. It is a privacy invading feature so no developement has been done on ths front. Feel free to submit PR if you want this.

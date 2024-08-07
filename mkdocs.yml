@@ -5,12 +5,15 @@ docs_dir: docs/
 theme:
   name: material
   features:
-    #- navigation.sections
-    - navigation.path
     - search.suggest
     - search.highlight
     - navigation.tracking
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.sections
+  
+repo_url: https://github.com/agorakit/agorakit
 plugins:
   - offline
   - search
@@ -35,6 +38,8 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - callouts
+  - toc:
+        title: On this page
 watch:
   - includes
 
@@ -55,6 +60,7 @@ nav:
     - Upgrading : upgrade.md
   
   - 'Contributing':
+    - Introduction: contribute.md
     - Setup a development server : development.md
     - Useful artisan commands : artisan.md
     - Writing documentation : documentation.md
