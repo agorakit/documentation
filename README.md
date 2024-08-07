@@ -1,2 +1,8 @@
-# Documentation has moved !
-Documentation for Agorakit is now to be found in the main repository, here : https://github.com/agorakit/agorakit/tree/master/docs
+# Agorakit documentation
+This is the documentation of Agorakit.
+Documentation is written in markdown and the website is statically built using [Mkdocs material](https://squidfunk.github.io/mkdocs-material/)
+
+
+# How to contribute ?
+Read the documentation on documenting (!) [here](./docs/documentation.md)
+

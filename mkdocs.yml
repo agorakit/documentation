@@ -1,24 +1,59 @@
-site_name: Agorakit docs
-nav:
-    - Welcome!: index.md
-    - 'Installation & config':
-        - Install: install.md
-        - Update: update.md
-        - Configure inbound email: inbound_email.md
-        - Configure external authentification: external_authentification.md
-        - First steps after install : first_steps.md
-    - 'Group managment':
-        - Creating & managing a group: group.md
-    - 'User guide':
-        - Using Agorakit : usage.md
-    - 'Developer guide':
-        - Introduction: development.md
-        - Artisan commands: artisan.md
-    - Contact : contact.md
-repo_url: https://github.com/agorakit/documentation/
-markdown_extensions:
-    - toc:
-        permalink: "#"
-    - admonition
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: Agorakit
 theme:
-  name: 'material'
+  name: material
+  features:
+    - navigation.sections
+    - navigation.path
+    - search.suggest
+    - search.highlight
+plugins:
+  - offline
+  - search
+markdown_extensions:
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - callouts
+watch:
+  - includes
+
+
+
+
+nav:
+  - Welcome: README.md
+  - 'Installation & updates':
+    - Installation : install.md
+    - Additional configurations : advanced_config.md
+    - Update your installation : update.md
+  - 'User guide': 
+    - First steps after install : first_steps.md
+    - Using Agorakit : usage.md
+    - Creating & managing a group : group.md
+  - 'Contributing':
+    - Setup a development server : development.md
+    - Useful artisan commands : artisan.md
+    - Writing documentation : documentation.md
+  - 'Contact and user group':
+    - How to contact us : contact.md
+
+
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Français
+      link: /fr/
+      lang: de
