@@ -26,6 +26,9 @@ Then start the built-in webserver to preview your work on the documentation.
     mkdocs serve
 
 
+The documentation is currently served by github pages. The workflow for publication is localted here : https://github.com/agorakit/documentation/actions/workflows/ci.yml
+
+
 See https://squidfunk.github.io/mkdocs-material/getting-started/ for more informations on how the documentation builder works.
 
 
