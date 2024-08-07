@@ -11,13 +11,13 @@ Ce type de question arrive fréquemment quand un groupe de personne classe diff�
 
 La solution proposée par Agorakit est d'utiliser les tags (ou mots clés) pour classer le contenu. Ceux-ci consistent en de simples mots clés que l'on peut appliquer au contenu. L'avantage est que l'on peut inventer un vocabulaire simple, éventuellement limité à quelques mots clés, et sans hiérarchie qui dépendrait trop de la logique de classement de chacun.
 
-?>Ainsi, un PV daté de 2021 sera simplement taggé `PV`et `2021` et sera très facile à retrouver ultérieurement.
+INFO: Ainsi, un PV daté de 2021 sera simplement taggé `PV`et `2021` et sera très facile à retrouver ultérieurement.
 
 Les tags peuvent être appliqués à des personnes, à des groupes, des discussions, des événements et des fichiers.
 
 Le fait de cliquer sur un tag vous permet de voir tous les autres éléments taggés de la même façon.
 
-?>Celles et ceux qui le souhaitent peuvent néanmoins classer les fichiers par dossier. Une combinaison des deux systèmes est également envisageable. A vous de voir ce qui marche le mieux pour votre groupe.
+INFO: Celles et ceux qui le souhaitent peuvent néanmoins classer les fichiers par dossier. Une combinaison des deux systèmes est également envisageable. A vous de voir ce qui marche le mieux pour votre groupe.
 
 ## Limiter les tags utilisables
 Mais les tags ne règlent pas tout. Si votre groupe est de taille importante ou que vous avez beaucoup de contenu, il est possible qu'un moment vous vous retrouviez avec trop de tags différents et non normalisés.

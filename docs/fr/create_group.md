@@ -35,7 +35,7 @@ L'intégration se fait par un code html personalisé, utilisant soit un javascri
 ## Le menu *Permissions*
 Vous pouvez ici limiter ce que les membres du groupe peuvent faire. L'interface est très simple il suffit de décocher les actions que vous voulez restreindre.
 
-?> Ce menu est amené à évoluer en fonction de vos besoins.
+INFO:  Ce menu est amené à évoluer en fonction de vos besoins.
 
 ## Le menu *Statistiques*
 Ce menu vous propose quelques graphiques d'évolution de votre groupe.

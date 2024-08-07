@@ -1,20 +1,30 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
 site_name: Agorakit
+docs_dir: docs/
 theme:
   name: material
   features:
-    - navigation.sections
+    #- navigation.sections
     - navigation.path
     - search.suggest
     - search.highlight
+    - navigation.tracking
+    - navigation.tabs
 plugins:
   - offline
   - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: fr
+          name: Français
+          build: true
 markdown_extensions:
-  - pymdownx.snippets:
-      auto_append:
-        - includes/abbreviations.md
   - admonition
   - pymdownx.details
   - pymdownx.highlight:
@@ -31,29 +41,22 @@ watch:
 
 
 
+
 nav:
-  - Welcome: README.md
-  - 'Installation & updates':
-    - Installation : install.md
-    - Additional configurations : advanced_config.md
-    - Update your installation : update.md
-  - 'User guide': 
+  - What is Agorakit?: index.md
+  - 'Using Agorakit': 
+    - Signing up: sign_up.md
     - First steps after install : first_steps.md
     - Using Agorakit : usage.md
     - Creating & managing a group : group.md
+  - 'Running Agorakit':
+    - Installation : install.md
+    - Advanced configurations : advanced_config.md
+    - Upgrading : upgrade.md
+  
   - 'Contributing':
     - Setup a development server : development.md
     - Useful artisan commands : artisan.md
     - Writing documentation : documentation.md
-  - 'Contact and user group':
+  - 'Contact and support':
     - How to contact us : contact.md
-
-
-extra:
-  alternate:
-    - name: English
-      link: /
-      lang: en
-    - name: Français
-      link: /fr/
-      lang: de

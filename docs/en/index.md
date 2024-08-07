@@ -1,6 +1,5 @@
-# Welcome, we are happy to see you here !
+# So, what is this ?
 
-## What is this tool ?
 Agorakit is an **open source**, **web based** groupware for **collectives**. It allows groups to communicate, organize events and store their files. It keeps everyone in your collaborative group updated with a discussion forum, agenda for events, file manager and email notifier.
 
 And most of the time Agorakit doesn't need an admin, keeping the process **as horizontal as possible**.

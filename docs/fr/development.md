@@ -4,9 +4,9 @@ You want to contribute to the project? Great! Any idea is welcome.
 
 - Please discuss the bug or feature request in the issue queue first.
 - Check the licence (AGPL) to see if it fits your contribution model
-- Follow Laravel best practives
-- We use unpoly js for spa like functionality, read a bit about it since it's not as popular as other options (think of it as turbolinks on steroids)
-- We use Bootstrap 5 flavored by tabler.io
+- Follow Laravel best practices
+- We use Unpoly js for spa like functionality, read a bit about it since it's not as popular as other options (think of it as turbolinks on steroids)
+- We use Bootstrap flavored by tabler.io
 
 
 # Developement server
@@ -16,6 +16,8 @@ Sail is a docker wrapper to ease local development. It's a really cool and easy 
 Laravel sail works out of the box in this project. Read the Sail documentation for more informations. 
 
 This is what I use on my main workstation (linux based) since it's very reproductible.
+
+Basically, `sail up` will start a developement server
 
 
 ## Using artisan serve
