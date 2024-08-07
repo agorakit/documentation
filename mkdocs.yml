@@ -74,8 +74,8 @@ nav:
   - 'Using Agorakit': 
     - Signing up: sign_up.md
     - First steps after install : first_steps.md
-    - Using Agorakit : usage.md
     - Creating & managing a group : group.md
+    - Using Agorakit : usage.md
   - 'Running Agorakit':
     - Installation : install.md
     - Advanced configurations : advanced_config.md

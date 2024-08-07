@@ -51,4 +51,6 @@ This one shows you some interesting stats about your groups and some nice graphs
 Invite people to one or more groups using the invite feature of each group. You can also add people directly if the already registered on your install. This is particularly useful if people have a hard time to confirm their email address and membership (trust me it happens).
 
 ## Memberships
-TODO
+On this page, you can view and export the list of members of your group. You can also check if everyone has accepted an invitation to join a group. 
+
+NOTE: The "Last activity" field shows the last time someone **wrote** something not the last time someone connected to the system. It might be misleading.

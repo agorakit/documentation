@@ -1,14 +1,10 @@
 # First steps after installation
 
-## Discover your installation
-Open your browser and go to the url of your web server. If using php's built-in web server it will be <http://localhost:8000>.
-
-## Register the first account
-Register a first user account : it will be you, and you will be super admin, yeah! Note that you need to have email sending working in order to validate your account.
+If you just installed Agorakit on a server, take some time to configure it correctly for your use case.
 
 ## Introduction text on the homepage
 Set an intro text on the homepage for newcomers : go to the admin page from your user profile dropdown.
 Using the editor you can add external images and whatever you want.
 
 ## Check all the admin settings
-Go to the admin menu (from your user profile dropdown) and check all the settings there.
+Go to the admin menu (from your user profile dropdown) and check all the settings there. Pay attention to the various permissions and group types you allow on your server.
