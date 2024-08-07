@@ -7,9 +7,9 @@ Documentation is written in markdown and the website is statically built using [
 - Create a Github account
 - Fork the Agorakit repository
 - Edit the documentation files in the /docs/ directory
-- Create a pull request 
+- Create a pull request to ask your changes to be merged
 
-NOTE: I find that using VS code to work on code and markdown files a simple enough option for most people.
+NOTE: Using [Visual Studio Code](https://code.visualstudio.com/) to work on code and markdown files is a reasonably simple option.
 
 ## How to build the docs ?
 Install mkdocs material and a few plugins. 

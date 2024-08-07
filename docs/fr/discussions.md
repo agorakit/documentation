@@ -14,4 +14,4 @@ Dans l'éditeur de texte, tapez simplement un @ , une liste des membres du group
 Cliquez simplement sur les troios petits points à droite de la discussion ou du commentaire en question : (...) et choisissez l'option "Effacer".
 L'auteur.e d'un message peut toujours l'effacer. Un.e admin de groupe peux tout effacer.
 
-!> Le fait d'effacer une discussion n'efface pas les fichiers joints à cette discussion.
+WARNING:  Le fait d'effacer une discussion n'efface pas les fichiers joints à cette discussion.

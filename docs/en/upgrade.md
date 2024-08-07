@@ -5,13 +5,12 @@ We try to keep the master branch always in a good, safe, and working condition (
 
 That means that tests passes and that you get the latest features directly from the master branch.
 
-!!! warning 
-    Make a backup of your SQL database in case something goes wrong. Make a backup of all your files as well. Make two backups even, and store them on a separate machine.
+WARNING: Make a backup of your SQL database in case something goes wrong. Make a backup of all your files as well. Make two backups even, and store them on a separate server.
 
 
-You can choose between an automated update procedure from the command line, or a step by step to update manually :
+INFO: You can choose between an automated update procedure from the command line, or a step by step to update manually.
 
-## Update script for automated updates
+## Option 1 : Using the update script
 There is a helper script that does the update for you :
 
 ```
@@ -22,7 +21,7 @@ There is a helper script that does the update for you :
     Beware that the script will migrate your database without asking for confirmation. Always make a backup of the database just in case something goes wrong.
 
 
-## Proceed with the update manually
+## Option 2 : Proceed with the update manually
 You can at anytime do this to update your install :
 
 ```
@@ -34,7 +33,7 @@ php artisan up
 ```
 
 
-## If something goes wrong
+# If something goes wrong
 Restore your database backup and git checkout a previous (working) version. Then re-run composer install.
 
 Contact us if an update fails (it never happened so this kind of failure is highly interesting information for the project).

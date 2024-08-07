@@ -1,4 +1,4 @@
-# Quick start after installation
+# First steps after installation
 
 ## Discover your installation
 Open your browser and go to the url of your web server. If using php's built-in web server it will be <http://localhost:8000>.

@@ -135,6 +135,5 @@ The script `php artisan schedule:run` should be run at least every 5 minutes usi
 Follow Laravel cron documentation here : https://laravel.com/docs/master/scheduling
 
 
-!!! info 
-    Without cron job your application will **NOT** send summaries. Cron jobs are required for correct opperation.
+NOTE: Without cron job your application will **NOT** send summaries, clean the DB, remind users of upcoming events, etc. Cron jobs are required for correct opperation.
 

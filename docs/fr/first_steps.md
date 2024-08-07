@@ -30,7 +30,7 @@ Ce menu vous permet également d'ajouter une entrée de menu supplémentaire à 
 
 L'intégration se fait par un code html personalisé, utilisant soit un javascript soit un iframe en fonction de l'outil choisi. Cette fonctionalité est amenée à évoluer enfonction des besoins réels des groupes. Vous pourriez par exmeple l'utiliser pour y insérer une charte de fonctionnement. 
 
-!>Tout code html peut être intégré, faites donc attention à ce que vous insérez afin de ne pas casser le layout. Cette fonction est à destination des utilisateur.trices avancé.e.s
+WARNING: Tout code html peut être intégré, faites donc attention à ce que vous insérez afin de ne pas casser le layout. Cette fonction est à destination des utilisateur.trices avancé.e.s
 
 ## Le menu *Permissions*
 Vous pouvez ici limiter ce que les membres du groupe peuvent faire. L'interface est très simple il suffit de décocher les actions que vous voulez restreindre.

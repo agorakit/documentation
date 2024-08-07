@@ -13,4 +13,4 @@ Une partie de la documentation est dédiée aux *administrateurs.trices de serve
 Le reste est destiné aux administrateurs.trices de groupes et enfin aux participant.e.s des mêmes groupes.
 
 
-!> La documentation en français est en cours d'écriture. Toute aide est la bienvenue!
+WARNING:  La documentation en français est en cours d'écriture. Toute aide est la bienvenue!

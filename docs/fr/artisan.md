@@ -13,4 +13,4 @@ Agorakit provides some useful [artisan](https://laravel.com/docs/7.x/artisan) co
 - `agorakit:sendnotifications`         Sends all the pending notifications to all users who requested it. This might take time. Call this frequently to avoid trouble
 - `agorakit:sendreminders`             Sends all reminders to participants who asked for it - call exactly every 5 minutes, no more, no less :-)
 
-!>Most of those commands are already used by the cron job, so they don't need to be called manually. But they might be useful for debugging and development.
+WARNING: Most of those commands are already used by the cron job, so they don't need to be called manually. But they might be useful for debugging and development.
