@@ -1,16 +1,22 @@
-# Agorakit, un outil de gestion pour collectifs
+# Agorakit : collective's collaboration simplified
+
+Agorakit is an **open source**, **web based** groupware for **collectives**. It allows groups to communicate, organize events and store their files. It keeps everyone in your collaborative group updated with a discussion forum, agenda for events, file manager and email notifier.
+
+And most of the time Agorakit doesn't need an admin, keeping the process **as horizontal as possible**.
+
+## Trying Agorakit
+If you want to try Agorakit without installing it, go to <https://app.agorakit.org>, **create an account there and create or join some groups**.
+
+## How to install Agorakit?
+As a server admin , you might want to [install](install.md) and later [upgrade](upgrade.md) Agorakit. Agorakit is written in PHP using the Laravel framework.
 
 
+## User guide
+If you are group member looking for help, check the [user guide](usage.md).
+If you are a group administrator on an new installation of Agorakit looking for help, check the [group owner quickstart](group.md).
 
-- Agorakit est un logiciel collaboratif qui permet de travailler en groupe.
-- En créant des groupes, les participants peuvent discuter, fixer des dates, partager des documents et tenir tout le monde à jour.
-- Agorakit est un forum, un calendrier, un gestionnaire de fichiers, un outil de cartographie et de notification par email.
-- Agorakit est un logiciel libre en constante évolution.
-
-Cette documentation a pour objectif de vous permettre **en tant qu'tilisateur.trice** de vous y retrouver le plus facilement possible avec Agorakit.
-
-Une partie de la documentation est dédiée aux *administrateurs.trices de serveur*, il s'agit d'une ou plusieurs personnes qui gèrent une installation d'Agorakit.
-Le reste est destiné aux administrateurs.trices de groupes et enfin aux participant.e.s des mêmes groupes.
+## Contributing
+If you are looking for ways to contribute (great!), **check the [contribution guide](contribute.md)**.
 
 
-WARNING:  La documentation en français est en cours d'écriture. Toute aide est la bienvenue!
+NOTE: This documentation is written in markdown and built using Mkdocs-material. Your help is hugely appreciated on any front, including documentation :-)

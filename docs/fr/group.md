@@ -5,8 +5,6 @@ Un groupe sur Agorakit est en général représentatif d'un groupe de personnes 
 La création d'un groupe sur Agorakit est très simple. 
 Cliquez simplement sur le menu `Groupes > Créer un groupe` en remplissez le formulaire.
 
-Référez-vous à la section [types de groupes](/fr/groups_types) afin de choisir le bon type de groupe.
-
 Une fois votre groupe créé, vous pouvez gérer différentes choses à partir du menu d'administration du groupe (le dernier menu de navigation du groupe intitulé `Gérer`).
 
 ## Le menu *Configuration*

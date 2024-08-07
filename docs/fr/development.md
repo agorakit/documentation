@@ -1,4 +1,4 @@
-# Developing with Agorakit
+# Contributing to Agorakit
 
 You want to contribute to the project? Great! Any idea is welcome. 
 
