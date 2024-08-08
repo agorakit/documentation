@@ -36,7 +36,6 @@ theme:
     
 repo_url: https://github.com/agorakit/agorakit
 plugins:
-  - autolinks
   - privacy
   - offline
   - search
