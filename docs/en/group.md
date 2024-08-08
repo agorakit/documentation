@@ -4,11 +4,16 @@
 
 Create one or more groups. A welcome and a test group are often useful.
 
-You can choose the type of group to create
+Depending on the type of community you want to create, there are several different types of group available.
 
-- An open group has public content and is open to memberships
-- A private group has private content and membership is invite only (admin need to accept new members)
-- A secret group is not shown anywhere except to existing members. Perfect for your next plot :-)
+### Public groups
+These groups are open to everyone, and their content is public. Anyone can create an account on the instance and join a public group. A small planet icon is displayed next to the group name.
+
+### Private groups
+These groups are by invitation only and their content is not public. Only the group's presentation page (including group photo and description text) is visible. If the group authorizes users to apply, a tab allows them to do so. A small padlock icon is displayed next to the name.
+
+### Secret groups
+These groups are completely invisible to those who don't know they exist. If you haven't been invited to one, you won't have access to it. A small crossed-out eye icon is displayed next to the name.
 
 !!! note
     Future releases of Agorakit might include more granular control of group types and membership access. Your input is valuable to further enhance this part.

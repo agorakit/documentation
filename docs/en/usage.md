@@ -1,12 +1,25 @@
 # Using Agorakit
 
+
 ## Start discussions
 
-Each group allows one to create discussions. Within discussions and comments, you can use a special syntax to reference existing files and discussions, and mention users.
+Each group allows you to create discussions. In discussions and comments, you can use special syntax to refer to existing files and discussions, and mention users.
 
-- Just start typing @ to mention someone (autocomplete appears)
+Choose a group and from the "Discussions" tab you can "Create a discussion". Mention a title and text as a minimum. You can also add keywords or tags to better classify discussions and help others find their way around.
 
-You may also directly attach a file to a discussion. Use the "Browse..." button below the discussion form to upload a file from your computer, attach it to the group, and mention it in the discussion in one go.
+- Just type @ to mention someone (autocomplete appears).
+
+You can also attach a file directly to a discussion. Use the "Browse..." button below the discussion form to download a file from your computer, attach it to the group and mention it in the discussion all at once.
+
+
+### Attach a file
+In the text editor, you can attach a file by dragging and dropping it, or by clicking on the "image" button, which allows you to insert not only an image, but any type of file. When you drag and drop a file, the system automatically sends your file and inserts a reference to it at the cursor position, in the form of an f:xx (xx being the file reference). When your discussion or comment is displayed, a preview of the file is automatically generated. 
+
+The file also appears in your group's "files" tab.
+
+### Mention another person
+Simply type @ in the text editor, and a list of group members will appear, allowing you to mention one or more people. They'll instantly receive an e-mail with your comment. Handy when you need a quick answer to your question.
+
 
 ## Schedule events
 

@@ -76,6 +76,9 @@ nav:
     - First steps after install : first_steps.md
     - Creating & managing a group : group.md
     - Using Agorakit : usage.md
+    - Using tags : tags.md
+    - Users : users.md
+    - Deleting content : delete_content.md
   - 'Running Agorakit':
     - Installation : install.md
     - Advanced configurations : advanced_config.md

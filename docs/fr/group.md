@@ -4,14 +4,20 @@
 
 Créez un ou plusieurs groupes. Un groupe de bienvenue et un groupe de test sont souvent utiles.
 
-Vous pouvez choisir le type de groupe à créer
+En fonction du type de communauté que vous souhaitez créer, vous avez à votre disposition différents types de groupes.
 
-- Un groupe ouvert a un contenu public et est ouvert aux adhésions
-- Un groupe privé a un contenu privé et l'adhésion se fait uniquement sur invitation (l'administrateur doit accepter les nouveaux membres).
-- Un groupe secret n'est visible que par les membres existants. Parfait pour votre prochaine intrigue :-)
+### Les groupes publics
+Ces groupes sont ouverts à tout le monde, et leur contenu est public. N'importe qui peut se créer un compte sur l'instance et rejoindre un groupe public. Une petite icône de planète est affichée à côté du nom.
 
-! !! note
-    Les prochaines versions d'Agorakit pourraient inclure un contrôle plus granulaire des types de groupes et de l'accès aux membres. Votre contribution est précieuse pour améliorer cette partie.
+### Les groupes privés
+Ces groupes sont sur invitation uniquement et leur contenu n'est pas public. Seul est visible la pag de présentation du groupe (comprenant la photo du groupe et le texte de description). Si le groupe autorise les utilisateurs à candidater, un onglet permet de le faire. Une petite icône de cadenas est affichée à côté du nom.
+
+### Les groupes secrets
+Ces groupes sont totalement invisibles pour celles et ceux qui n'en connaissent pas l'existence. Si vous n'êtes pas invité à un tel groupe vous n'y avez pas accès. Une petite icône d'oeuil barré est affichée à côté du nom.
+
+
+NOTE: Les prochaines versions d'Agorakit pourraient inclure un contrôle plus granulaire des types de groupes et de l'accès aux membres. Votre contribution est précieuse pour améliorer cette partie.
+
 
 ## Paramètres du groupe
 Si vous êtes administrateur d'un groupe, vous aurez un onglet "admin" sur le(s) groupe(s) que vous gérez. Vous pouvez y gérer beaucoup de choses dans votre groupe.
@@ -25,8 +31,7 @@ Ce menu vous permet de choisir la stratégie de marquage que vous souhaitez pour
 - Balisage libre : tout le monde peut baliser le contenu avec n'importe quelle étiquette.
 - Tagging contrôlé : vous décidez quels tags sont autorisés dans votre groupe.
 
-! !! note
-        Bien que le balisage libre soit agréable, il est souvent préférable de se fixer ensemble un ensemble de balises et de s'y tenir dans votre groupe. "Moins c'est plus" et "chacun a une façon différente d'organiser le contenu, alors tenons-nous en à une seule façon de le faire".
+NOTE: Bien que le balisage libre soit agréable, il est souvent préférable de se fixer ensemble un ensemble de balises et de s'y tenir dans votre groupe. "Moins c'est plus" et "chacun a une façon différente d'organiser le contenu, alors tenons-nous en à une seule façon de le faire".
 
 Les administrateurs de groupe peuvent également définir des couleurs pour les balises. Les couleurs sont partagées entre les groupes.
 
