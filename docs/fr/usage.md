@@ -1,27 +1,27 @@
-# Using Agorakit
+# Utilisation d'Agorakit
 
-## Start discussions
+## Démarrer les discussions
 
-Each group allows one to create discussions. Within discussions and comments, you can use a special syntax to reference existing files and discussions, and mention users.
+Chaque groupe permet de créer des discussions. Dans les discussions et les commentaires, vous pouvez utiliser une syntaxe spéciale pour faire référence à des fichiers et des discussions existants, et mentionner des utilisateurs.
 
-- Just start typing @ to mention someone (autocomplete appears)
+- Il suffit de taper @ pour mentionner quelqu'un (l'autocomplétion apparaît).
 
-You may also directly attach a file to a discussion. Use the "Browse..." button below the discussion form to upload a file from your computer, attach it to the group, and mention it in the discussion in one go.
+Vous pouvez également joindre directement un fichier à une discussion. Utilisez le bouton "Parcourir..." situé sous le formulaire de discussion pour télécharger un fichier depuis votre ordinateur, le joindre au groupe et le mentionner dans la discussion en une seule fois.
 
-## Schedule events
+## Programmer des événements
 
-Each group has a calendar where you can add actions/events. You just need to set a start date and time, and an optional duration. If no duration is set, it is assumed to be 1 hour.
+Chaque groupe dispose d'un calendrier dans lequel vous pouvez ajouter des actions/événements. Il vous suffit de définir une date et une heure de début, ainsi qu'une durée facultative. Si aucune durée n'est définie, elle est supposée être d'une heure.
 
-## Upload files and share links
-You can add file to groups directly in the files tab. Just upload one or more files, add some tags for organization. As explained above, you can also directly attach files to comments and discussions.
+## Télécharger des fichiers et partager des liens
+Vous pouvez ajouter des fichiers aux groupes directement dans l'onglet des fichiers. Il suffit de télécharger un ou plusieurs fichiers et d'ajouter quelques balises pour les organiser. Comme expliqué ci-dessus, vous pouvez également joindre directement des fichiers aux commentaires et aux discussions.
 
-## Categorize content using tags
+## Catégoriser le contenu à l'aide de balises
 
-Tags (aka Labels) are very important to organize your content. You can tag anything in Agorakit (files, users, discussions, groups, actions). Group admins can either choose to use freeform tagging (anyone can choose any tag) or restrict the tags you can use in each group (more like github labels for example).
+Les tags (ou étiquettes) sont très importants pour organiser votre contenu. Vous pouvez étiqueter n'importe quoi dans Agorakit (fichiers, utilisateurs, discussions, groupes, actions). Les administrateurs de groupes peuvent choisir d'utiliser des tags libres (n'importe qui peut choisir n'importe quel tag) ou restreindre les tags que vous pouvez utiliser dans chaque groupe (plus comme les labels github par exemple).
 
-Once content is tagged, it can be found as a simple overview page, showing all tags and showing all content attached to a particular tag. Great to have a big overview of your groups.
+Une fois que le contenu est étiqueté, il peut être trouvé comme une simple page d'aperçu, montrant tous les tags et montrant tous les contenus attachés à un tag particulier. C'est très pratique pour avoir une vue d'ensemble de vos groupes.
 
 
-## Last step : profit !
+## Dernière étape : le profit !
 
-(or in some cases, revolution!)
+(ou dans certains cas, révolution !)

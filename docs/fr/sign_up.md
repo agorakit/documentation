@@ -1,12 +1,12 @@
-To use Agorakit, simply connect to the Agorakit server you are using.
+Pour utiliser Agorakit, il suffit de se connecter au serveur Agorakit que vous utilisez.
 
-This can be either the shared instance at https://app.agorakit.org ("name your price" instance available for your tests and for collectives), or a server you have installed or someone manages for you.
+Il peut s'agir de l'instance partagée sur https://app.agorakit.org (instance "name your price" disponible pour vos tests et pour les collectifs), ou d'un serveur que vous avez installé ou que quelqu'un gère pour vous.
 
-## Registering a new user
-On most servers, you can freely create a new user account. If you cannot create an account on a particular server it means registration has been disabled. In this case you need an invitation from the server admin to join the server.
+## Enregistrer un nouvel utilisateur
+Sur la plupart des serveurs, vous pouvez librement créer un nouveau compte utilisateur. Si vous ne pouvez pas créer de compte sur un serveur particulier, cela signifie que l'enregistrement a été désactivé. Dans ce cas, vous devez recevoir une invitation de l'administrateur du serveur pour rejoindre le serveur.
 
-## The special case of the first user account
-If you register a user account on a new server (one without any existing user), you will be the server admin (super user) on this server.
+## Le cas particulier du premier compte d'utilisateur
+Si vous créez un compte utilisateur sur un nouveau serveur (sans utilisateur existant), vous serez l'administrateur du serveur (super utilisateur) sur ce serveur.
 
 
-NOTE: You need to have email sending working in order to validate your account.
+NOTE : L'envoi d'email doit fonctionner pour que votre compte puisse être validé.

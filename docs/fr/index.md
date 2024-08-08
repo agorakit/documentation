@@ -1,22 +1,22 @@
-# Agorakit : collective's collaboration simplified
+# Agorakit : la collaboration collective simplifiée
 
-Agorakit is an **open source**, **web based** groupware for **collectives**. It allows groups to communicate, organize events and store their files. It keeps everyone in your collaborative group updated with a discussion forum, agenda for events, file manager and email notifier.
+Agorakit est un collecticiel **open source**, **web based** pour **collectifs**. Il permet aux groupes de communiquer, d'organiser des événements et de stocker leurs fichiers. Il permet à tous les membres de votre groupe collaboratif de se tenir au courant grâce à un forum de discussion, un agenda pour les événements, un gestionnaire de fichiers et un notificateur d'emails.
 
-And most of the time Agorakit doesn't need an admin, keeping the process **as horizontal as possible**.
+La plupart du temps, Agorakit n'a pas besoin d'administrateur, ce qui rend le processus **aussi horizontal que possible**.
 
-## Trying Agorakit
-If you want to try Agorakit without installing it, go to <https://app.agorakit.org>, **create an account there and create or join some groups**.
+## Essayer Agorakit
+Si vous voulez essayer Agorakit sans l'installer, allez sur <https://app.agorakit.org>, **créez un compte et créez ou rejoignez des groupes**.
 
-## How to install Agorakit?
-As a server admin , you might want to [install](install.md) and later [upgrade](upgrade.md) Agorakit. Agorakit is written in PHP using the Laravel framework.
-
-
-## User guide
-If you are group member looking for help, check the [user guide](usage.md).
-If you are a group administrator on an new installation of Agorakit looking for help, check the [group owner quickstart](group.md).
-
-## Contributing
-If you are looking for ways to contribute (great!), **check the [contribution guide](contribute.md)**.
+## Comment installer Agorakit ?
+En tant qu'administrateur de serveur, vous pourriez vouloir [installer](install.md) et plus tard [mettre à jour](upgrade.md) Agorakit. Agorakit est écrit en PHP en utilisant le framework Laravel.
 
 
-NOTE: This documentation is written in markdown and built using Mkdocs-material. Your help is hugely appreciated on any front, including documentation :-)
+## Guide de l'utilisateur
+Si vous êtes membre d'un groupe et que vous avez besoin d'aide, consultez le [user guide](usage.md).
+Si vous êtes administrateur d'un groupe sur une nouvelle installation d'Agorakit et que vous avez besoin d'aide, consultez le [group owner quickstart](group.md).
+
+## Contribuer
+Si vous cherchez des moyens de contribuer (super !), **voyez le [guide de contribution](contribute.md)**.
+
+
+NOTE : Cette documentation est écrite en markdown et construite en utilisant Mkdocs-material. Votre aide est très appréciée sur tous les fronts, y compris la documentation :-)

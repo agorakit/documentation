@@ -1,48 +1,52 @@
-## Configuration des e-mails entrants
+## Configurer les courriels entrants
 
-Cette étape supplémentaire vous permet d'avoir une boîte aux lettres pour chaque groupe afin que les membres puissent publier par e-mail pour créer des discussions et répondre aux e-mails de discussion pour créer de nouveaux commentaires.
+Cette étape supplémentaire vous permet d'avoir une boîte aux lettres pour chaque groupe afin que les membres puissent envoyer des messages par courriel pour créer des discussions et répondre aux courriels des discussions pour créer de nouveaux commentaires.
 
-NOTE: La prise en charge des e-mails entrante est expérimentale mais utilisée dans plusieurs cas.Vous pourriez cependant découvrir des bogues, veuillez les signaler si cela arrive à votre installation.
-
-
-- Vous avez besoin d'une adresse e-mail sur un serveur avec support IMAP. Il doit être soit une capture sur un sous-domaine (ou même sur un domaine) ou un serveur prenant en charge "+" l'adressage (Gmail par exemple le permet).
-- Vous avez besoin de l'extension PHP IMAP
-- La configuration se produit dans votre .env
-
-Disons que vous avez installé Agorakit sur agora.example.org:
-
-- Créez une boîte aux lettres Catchall sur *. @ Agora.example.org
-- Modifiez votre fichier .env et ajoutez / définissez les paramètres suivants:
-
-`` '
-# Paramètres du serveur de boîtes à lettres de réception, utilisation pour les e-mails entrants.
-# Définissez Inbox_Driver sur NULL pour désactiver cette fonctionnalité
-Inbox_Driver = IMAP
-Inbox_host = yourmailhost.tld
-Inbox_Username = nom d'utilisateur de la boîte aux lettres
-Inbox_password = mot de passe de la boîte aux lettres
-Inbox_prefix =
-Inbox_Suffix=@agora.example.org
-
-`` '
+! !! note
+    Le support des emails entrants est expérimental mais utilisé sur plusieurs instances. Il est possible que vous rencontriez des bogues, veuillez les signaler si cela se produit dans votre installation.
 
 
-### Préfixes et suffixes définissants
-Vous devez remplir le préfixe et le suffixe.Deux cas là-bas:
+- Vous avez besoin d'une adresse email sur un serveur supportant l'imap. Il doit s'agir d'une adresse "catch all" sur un sous-domaine (ou même sur un domaine) ou d'un serveur supportant l'adressage "+" (gmail par exemple le permet).
+- Vous avez besoin de l'extension php imap
+- La configuration se fait dans votre .env
+
+Disons que vous avez installé Agorakit sur agora.example.org :
+
+- Créer une boîte aux lettres catchall sur * .@agora.example.org
+- Editez votre fichier .env et ajoutez/définissez les paramètres suivants :
+
+```
+# Paramètres du serveur de la boîte aux lettres, à utiliser pour les courriels entrants.
+# Définissez INBOX_DRIVER à null pour désactiver cette fonctionnalité
+INBOX_DRIVER=imap
+INBOX_HOST=votremailhost.tld
+INBOX_USERNAME=nom d'utilisateur de la boîte aux lettres
+INBOX_PASSWORD=mot de passe de la boîte aux lettres
+INBOX_PREFIX=
+INBOX_SUFFIX=@agora.example.org
+
+```
 
 
-- Pour un catch, tout il n'y a pas de préfixe.Le suffixe dans l'exemple ci-dessus serait `@ agora.example.org`.Cela créera des e-mails comme `Group-Slug @ agora.example.com`
+### Définir les préfixes et les suffixes
+Vous devez renseigner le préfixe et le suffixe. Il y a deux cas de figure :
 
-- D'un autre côté, si vous utilisez "+" l'adressage (une boîte Gmail par exemple, appelons-le agorakit@gmail.com),
 
-- Le préfixe sera `agorakit +`
-- Le suffixe sera `@ gmail.com`
+- Pour un catch all, il n'y a pas de préfixe. Le suffixe dans l'exemple ci-dessus serait `@agora.example.org` . Cela créera des courriels comme `group-slug@agora.example.com`
 
-Cela créera des e-mails comme `agorakit + groupe-slug @ gmail.com`
+- En revanche, si vous utilisez l'adresse "+" (une boîte gmail par exemple, appelons-la agorakit@gmail.com),
 
-Si vous activez l'e-mail entrant, la boîte aux lettres sera automatiquement cochée et le courrier électronique traité sera placé dans un dossier "traité" dans la boîte de réception.Les e-mails échoués seront également placés dans un dossier "échoué" dans la boîte de réception pour l'inspection.
+    - le préfixe sera `agorakit+`
+    - le suffixe sera `@gmail.com`.
+
+    Cela créera des emails comme `agorakit+group-slug@gmail.com`
+
+Si vous activez les emails entrants, la boîte aux lettres sera automatiquement vérifiée et les emails traités seront placés dans un dossier "processed" sous INBOX. Les courriels échoués seront également placés dans un dossier "failed" sous INBOX pour inspection.
 
 
 ## Authentification externe
 
-INOF: L'authentification externe a été supprimée.J'ai peu de gens (le cas échéant) de la demander.Il s'agit d'une fonctionnalité d'invasion de confidentialité, donc aucun développement n'a été effectué sur le front.
+! !! info
+    L'authentification externe a été supprimée. Je n'ai que très peu (voire pas du tout) de personnes qui l'ont demandée. Il s'agit d'une fonctionnalité qui porte atteinte à la vie privée, c'est pourquoi aucun développement n'a été fait dans ce sens. N'hésitez pas à soumettre un PR si vous le souhaitez.
+
+

@@ -1,3 +1,5 @@
 mkdocs-material
 mkdocs-static-i18n
 markdown-callouts
+python-dotenv
+deepl

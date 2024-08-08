@@ -1,16 +1,16 @@
-# Useful artisan commands
+# Commandes artisanales utiles
 
-Agorakit provides some useful [artisan](https://laravel.com/docs/7.x/artisan) commands :
+Agorakit fournit quelques commandes [artisan](https://laravel.com/docs/7.x/artisan) utiles :
 
-- `agorakit:checkmailbox`             Check the configured email imap server to allow post by email functionality
-- `agorakit:cleanupdatabase`         Cleanup the database, delete forever soft deleted models and unverified users older than 30 days
-- `agorakit:convertfiles`              Convert the files from the old flat path based storage to the new storage, putting back their initila filename and moving the file to public directory. Use this **once** if you already have files on your install and if your install is older than november 2016.
-- `agorakit:convertfolderstotags`      Convert all folders to the new tag based system. Add the tags represneting parent folder to each file
-- `agorakit:deletefiles`               Delete files from storage after 30 days of deletion in database
-- `agorakit:export`                    Export a group to a zip file (work in progress)
-- `agorakit:import`                    Import a group from an Agorakit export zip file (work in progress)
-- `agorakit:populatefilesize`          Set filesize in the files table using real filesize from the filesystem. Use this if you installed agorakit before november 2017
-- `agorakit:sendnotifications`         Sends all the pending notifications to all users who requested it. This might take time. Call this frequently to avoid trouble
-- `agorakit:sendreminders`             Sends all reminders to participants who asked for it - call exactly every 5 minutes, no more, no less :-)
+- `agorakit:checkmailbox` Vérifier le serveur email imap configuré pour permettre la fonctionnalité de postage par email
+- `agorakit:cleanupdatabase` Nettoie la base de données, supprime pour toujours les modèles supprimés et les utilisateurs non vérifiés de plus de 30 jours.
+- `agorakit:convertfiles` Convertit les fichiers de l'ancien stockage basé sur le chemin plat vers le nouveau stockage, en remettant leur nom de fichier initial et en déplaçant le fichier vers le répertoire public. Utilisez ceci **une fois** si vous avez déjà des fichiers sur votre installation et si votre installation est antérieure à novembre 2016.
+- `agorakit:convertfolderstotags` Convertit tous les dossiers au nouveau système basé sur les tags. Ajouter les tags représentant le dossier parent à chaque fichier.
+- `agorakit:deletefiles` Supprime les fichiers du stockage après 30 jours de suppression dans la base de données.
+- `agorakit:export` Exporter un groupe vers un fichier zip (travail en cours)
+- `agorakit:import` Importer un groupe depuis un fichier zip d'exportation Agorakit (travail en cours)
+- `agorakit:populatefilesize` Fixe la taille des fichiers dans la table des fichiers en utilisant la taille réelle du système de fichiers. A utiliser si vous avez installé Agorakit avant novembre 2017.
+- `agorakit:sendnotifications` Envoie toutes les notifications en attente à tous les utilisateurs qui l'ont demandé. Cela peut prendre du temps. Appelez ceci fréquemment pour éviter les problèmes
+- `agorakit:sendreminders` Envoie tous les rappels aux participants qui l'ont demandé - appeler exactement toutes les 5 minutes, ni plus, ni moins :-)
 
-WARNING: Most of those commands are already used by the cron job, so they don't need to be called manually. But they might be useful for debugging and development.
+ATTENTION : La plupart de ces commandes sont déjà utilisées par le job cron, elles n'ont donc pas besoin d'être appelées manuellement. Mais elles peuvent être utiles pour le débogage et le développement.

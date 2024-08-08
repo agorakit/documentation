@@ -1,19 +1,19 @@
-# Contribute to the documentation
+# Contribuer à la documentation
 
-Documentation is written in markdown and the website is statically built using [Mkdocs material](https://squidfunk.github.io/mkdocs-material/)
+La documentation est écrite en markdown et le site web est construit statiquement en utilisant [Mkdocs material](https://squidfunk.github.io/mkdocs-material/)
 
-NOTE: New languages, better wording, new sections, more visuals, any fixes even small ones are welcome!
+NOTE : Nouveaux langages, meilleure formulation, nouvelles sections, plus de visuels, toutes les corrections même petites sont les bienvenues !
 
-## How to contribute ?
-- Create a Github account
-- Fork the Agorakit repository
-- Edit the documentation files in the /docs/ directory
-- Create a pull request to ask your changes to be merged
+## Comment contribuer ?
+- Créer un compte Github
+- Créer un dépôt Agorakit (Fork)
+- Editez les fichiers de documentation dans le répertoire /docs/.
+- Créez une pull request pour demander à ce que vos changements soient fusionnés
 
-TIP: Using [Visual Studio Code](https://code.visualstudio.com/) to work on code and markdown files is a reasonably simple option. You additionaly get a built in user interface for git and github integration, which is nice for beginners.
+CONSEIL : L'utilisation de [Visual Studio Code] (https://code.visualstudio.com/) pour travailler sur du code et des fichiers markdown est une option raisonnablement simple. Vous disposez en outre d'une interface utilisateur intégrée pour l'intégration de git et de github, ce qui est intéressant pour les débutants.
 
-## How to build the docs ?
-Install mkdocs material and a few plugins. 
+## Comment construire la documentation ?
+Installez mkdocs material et quelques plugins.
 
 
     pip install mkdocs-material
@@ -21,23 +21,23 @@ Install mkdocs material and a few plugins.
     pip install mkdocs-static-i18n
 
 
-Then start the built-in webserver to preview your work on the documentation.
+Démarrez ensuite le serveur web intégré pour prévisualiser votre travail sur la documentation.
 
     mkdocs serve
 
 
-The documentation is currently served by github pages. The workflow for publication is localted here : https://github.com/agorakit/documentation/actions/workflows/ci.yml
+La documentation est actuellement servie par des pages github. Le processus de publication est localisé ici : https://github.com/agorakit/documentation/actions/workflows/ci.yml
 
-How this works ?
-Each time a commit is made on main or master branch, the doc are built using https://github.com/mhausenblas/mkdocs-deploy-gh-pages
-(this is a git action that does the work for us)
+Comment cela fonctionne-t-il ?
+A chaque fois qu'un commit est fait sur la branche principale ou master, la documentation est construite en utilisant https://github.com/mhausenblas/mkdocs-deploy-gh-pages
+(c'est une action git qui fait le travail pour nous)
 
-The resulting files are put into the GH-branch of the documentation repository which is then serbed using the github "pages" feature.
+Les fichiers résultants sont placés dans la branche GH du dépôt de documentation qui est ensuite sérialisée en utilisant la fonctionnalité "pages" de github.
 
-It's a bit painful to configure but it seems that once done, it works.
+C'est un peu difficile à configurer mais il semble qu'une fois que c'est fait, ça fonctionne.
 
 
-See https://squidfunk.github.io/mkdocs-material/getting-started/ for more informations on how the documentation builder works.
+Voir https://squidfunk.github.io/mkdocs-material/getting-started/ pour plus d'informations sur le fonctionnement du constructeur de documentation.
 
 
 

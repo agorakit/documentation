@@ -1,66 +1,66 @@
-# Contributing to Agorakit
+# Contribuer à Agorakit
 
-You want to contribute to the project? Great! Any idea is welcome. 
+Vous voulez contribuer au projet ? C'est très bien ! Toute idée est la bienvenue.
 
-- Please discuss the bug or feature request in the issue queue first.
-- Check the licence (AGPL) to see if it fits your contribution model
-- Follow Laravel best practices
-- We use Unpoly js for spa like functionality, read a bit about it since it's not as popular as other options (think of it as turbolinks on steroids)
-- We use Bootstrap flavored by tabler.io
-
-
-# Developement server
-
-## Using Laravel Sail
-Sail is a docker wrapper to ease local development. It's a really cool and easy way to have a perfect local server for devs.
-Laravel sail works out of the box in this project. Read the Sail documentation for more informations. 
-
-This is what I use on my main workstation (linux based) since it's very reproductible.
-
-Basically, `sail up` will start a developement server
+- Veuillez d'abord discuter du bogue ou de la demande de fonctionnalité dans la file d'attente des problèmes.
+- Vérifiez la licence (AGPL) pour voir si elle correspond à votre modèle de contribution.
+- Suivez les meilleures pratiques de Laravel
+- Nous utilisons Unpoly js pour les fonctionnalités de type spa, lisez un peu à son sujet car il n'est pas aussi populaire que les autres options (pensez-y comme des turbolinks sur les stéroïdes).
+- Nous utilisons Bootstrap aromatisé par tabler.io
 
 
-## Using artisan serve
+# Serveur de développement
 
-If you want to start a local server for development:
+## Utilisation de Laravel Sail
+Sail est un wrapper docker pour faciliter le développement local. C'est un moyen vraiment cool et facile d'avoir un serveur local parfait pour les développeurs.
+Laravel Sail fonctionne d'emblée dans ce projet. Lisez la documentation de Sail pour plus d'informations.
+
+C'est ce que j'utilise sur ma station de travail principale (basée sur linux) car c'est très reproductible.
+
+En gros, `sail up` va démarrer un serveur de développement
+
+
+## Utilisation de artisan serve
+
+Si vous voulez démarrer un serveur local pour le développement :
 
     $ php artisan serve
 
-The install will be available to 127.0.0.1:8000
+L'installation sera disponible pour 127.0.0.1:8000
 
-There are a lot of other options, check the laravel doc and ecosystem to have an overview of the options for local developement.
+Il y a beaucoup d'autres options, consultez la documentation et l'écosystème de Laravel pour avoir une vue d'ensemble des options pour le développement local.
 
-# Seed the DB 
-First follow the installation instructions including the creation of sample content using :
+# Création de la base de données
+Suivez d'abord les instructions d'installation, y compris la création d'un échantillon de contenu en utilisant :
 
     $ php artisan db:seed
 
 
-# Working on design and css
+# Travailler sur le design et les css
 
-I ditched all build steps, now everything happens in a flat custom.css file.
+J'ai supprimé toutes les étapes de construction, maintenant tout se passe dans un fichier custom.css plat.
 
-All external JS and CSS are served from various CDN's. At some point the files will be re-served from local, when everything will be stabilized, and if there are real benefits of doing so.
+Tous les JS et CSS externes sont servis par différents CDN. A un moment donné, les fichiers seront re-servis en local, quand tout sera stabilisé, et s'il y a de réels avantages à le faire.
 
-No npm, no node, no tailwind, no purge, no minifier, no trouble :)
+Pas de npm, pas de node, pas de tailwind, pas de purge, pas de minifier, pas de problème :)
 
 
-# Testing your code
+# Tester votre code
 
-Agorakit is tested using the Laravel testing framework.
+Agorakit est testé en utilisant le framework de test Laravel.
 
-In order to test, you need to have an existing testing database. Just create an additional empty DB, for instance agorakit_testing and check in the phpunit.xml file that everything matches.
+Pour tester, vous devez avoir une base de données de test existante. Il suffit de créer une nouvelle base de données vide, par exemple agorakit_testing et de vérifier dans le fichier phpunit.xml que tout correspond.
 
-Before comiting code, you should either write more tests (in this case you deserve a cookie). Or at least check that you didn't break anything by simply typing::
+Avant de commencer le code, vous devriez soit écrire plus de tests (dans ce cas, vous méritez un cookie). Ou au moins vérifier que vous n'avez rien cassé en tapant simplement: :
 
     php artisan test
 
-...in the root of your project.
+...à la racine de votre projet.
 
-No error should appear (provided that you have everything correctly set up.
+Aucune erreur ne devrait apparaître (à condition que tout soit correctement configuré).
 
-We use travis ci to run all those tests on commit so it will be done automatically for you at some point :-)
+Nous utilisons travis ci pour exécuter tous ces tests lors du commit, donc cela sera fait automatiquement pour vous à un moment donné :-)
 
-# Writing tests
+# Ecriture des tests
 
-Don't hesitate to write tests. We favor well defined tasks an end user would really accomplish, like registering, creating an account, posting, uploading, etc... It has served us very well in the past to spot errors and it really mirrors real use cases. Although we are open to other kind of tests as well...
+N'hésitez pas à écrire des tests. Nous privilégions les tâches bien définies qu'un utilisateur final accomplirait réellement, comme l'inscription, la création d'un compte, la publication, le téléchargement, etc... Cela nous a très bien servi dans le passé pour repérer les erreurs et cela reflète vraiment les cas d'utilisation réels. Bien que nous soyons ouverts à d'autres types de tests...

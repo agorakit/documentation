@@ -1,28 +1,28 @@
-# Upgrade Agorakit
-It is important to keep an up to date installation of Agorakit. The process is safe
+# Mise à jour d'Agorakit
+Il est important de maintenir une installation d'Agorakit à jour. Le processus est sûr
 
-We try to keep the master branch always in a good, safe, and working condition (this is called a "rolling release" model).
+Nous essayons de garder la branche master toujours dans un bon état de fonctionnement (c'est ce qu'on appelle un modèle de "rolling release").
 
-That means that tests passes and that you get the latest features directly from the master branch.
+Cela signifie que les tests sont réussis et que vous obtenez les dernières fonctionnalités directement à partir de la branche master.
 
-WARNING: Make a backup of your SQL database in case something goes wrong. Make a backup of all your files as well. Make two backups even, and store them on a separate server.
+ATTENTION : Faites une sauvegarde de votre base de données SQL au cas où quelque chose tournerait mal. Faites également une sauvegarde de tous vos fichiers. Faites même deux sauvegardes et stockez-les sur un serveur séparé.
 
 
-INFO: You can choose between an automated update procedure from the command line, or a step by step to update manually.
+INFO : Vous pouvez choisir entre une procédure de mise à jour automatisée à partir de la ligne de commande, ou une procédure de mise à jour manuelle étape par étape.
 
-## Option 1 : Using the update script
-There is a helper script that does the update for you :
+## Option 1 : Utilisation du script de mise à jour
+Il existe un script d'aide qui effectue la mise à jour pour vous :
 
 ```
 ./update
 ```
 
-!!! warning
-    Beware that the script will migrate your database without asking for confirmation. Always make a backup of the database just in case something goes wrong.
+! !! avertissement
+    Attention, le script migrera votre base de données sans vous demander confirmation. Faites toujours une sauvegarde de la base de données au cas où quelque chose se passerait mal.
 
 
-## Option 2 : Proceed with the update manually
-You can at anytime do this to update your install :
+## Option 2 : Procéder à la mise à jour manuellement
+Vous pouvez à tout moment procéder à la mise à jour de votre installation :
 
 ```
 php artisan down
@@ -33,19 +33,19 @@ php artisan up
 ```
 
 
-# If something goes wrong
-Restore your database backup and git checkout a previous (working) version. Then re-run composer install.
+# Si quelque chose ne va pas
+Restaurez la sauvegarde de votre base de données et faites un git checkout d'une version précédente (fonctionnelle). Puis réexécutez composer install.
 
-Contact us if an update fails (it never happened so this kind of failure is highly interesting information for the project).
+Contactez-nous si une mise à jour échoue (cela n'est jamais arrivé, donc ce genre d'échec est une information très intéressante pour le projet).
 
-# Version Specific Instructions
-## Upgrade to 1.5
-After the normal update you might get an error mentioning duplicate username key in user table.
+# Instructions spécifiques à la version
+## Mise à jour vers la version 1.5
+Après la mise à jour normale, il se peut que vous obteniez une erreur mentionnant la duplication de la clé du nom d'utilisateur dans la table des utilisateurs.
 
-Run `php artisan agorakit:enforceuniqueusernames` to fix the issue
-Then re-run the update script.
+Exécutez `php artisan agorakit:enforceuniqueusernames` pour corriger le problème.
+Puis réexécutez le script de mise à jour.
 
-This happens only on large installs and can be run multiple times without problem. It's a future proof fix for this issue.
+Ceci n'arrive que sur les grosses installations et peut être exécuté plusieurs fois sans problème. C'est une solution à l'épreuve du temps pour ce problème.
 
-!!! note
-    Most one time upgrades like the one mentionned above are now made inside migrations to reduce the amount of documentation you need to read in order to properly upgrade your installation. Sit back, relax, and enjoy automation at work :-)
+! !! note
+    La plupart des mises à jour ponctuelles comme celle mentionnée ci-dessus sont maintenant effectuées dans le cadre de migrations afin de réduire la quantité de documentation que vous devez lire pour mettre à jour correctement votre installation. Asseyez-vous, détendez-vous et appréciez l'automatisation au travail :-)
