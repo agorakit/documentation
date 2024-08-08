@@ -15,10 +15,7 @@ CONSEIL : L'utilisation de [Visual Studio Code] (https://code.visualstudio.com/)
 ## Comment construire la documentation ?
 Installez mkdocs material et quelques plugins.
 
-
-    pip install mkdocs-material
-    pip install markdown-callouts
-    pip install mkdocs-static-i18n
+    pip install -r requirements.txt
 
 
 Démarrez ensuite le serveur web intégré pour prévisualiser votre travail sur la documentation.

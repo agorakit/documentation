@@ -15,10 +15,7 @@ TIP: Using [Visual Studio Code](https://code.visualstudio.com/) to work on code 
 ## How to build the docs ?
 Install mkdocs material and a few plugins. 
 
-
-    pip install mkdocs-material
-    pip install markdown-callouts
-    pip install mkdocs-static-i18n
+    pip install -r requirements.txt
 
 
 Then start the built-in webserver to preview your work on the documentation.
