@@ -36,6 +36,7 @@ theme:
     
 repo_url: https://github.com/agorakit/agorakit
 plugins:
+  - autolinks
   - privacy
   - offline
   - search
@@ -50,6 +51,7 @@ plugins:
           name: Français
           build: true
 markdown_extensions:
+  - mdx_linkify
   - admonition
   - pymdownx.details
   - pymdownx.highlight:
